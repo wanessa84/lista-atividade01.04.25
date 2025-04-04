@@ -111,3 +111,53 @@ print(array3)
 #---------------------------------------------
 #14. Calcule a média e o desvio padrão de um array.
 #---------------------------------------------
+#-----------------------------------------
+#15. Exiba apenas os números pares do array.
+#-----------------------------------------
+
+array = np.array([1,2,3,5,6,8,9])
+print(array[array % 2 == 0]) 
+
+
+#----------------------------------------
+#16.Crie um dicionário com 3 produtos e seus preços. Acesse o preço de um produto específico.
+#---------------------------------------
+
+produtos = {
+   'Anel': 350,
+   'Esmalte': 9,
+   'Tesoura': 15
+
+}
+
+print(produtos['Anel']) 
+
+#------------------------------------------
+#17. Adicione um novo produto e altere o preço de um existente.
+#-----------------------------------------
+
+
+produtos['Corretivo'] = 5
+
+produtos['esmalte'] = 3
+
+print(produtos)
+
+
+#--------------------------------------------
+#18. Remova um item do dicionário.
+#------------------------------------------
+
+
+produtos.pop('anel')
+
+print(produtos)
+
+#----------------------------------------
+#19.Percorra o dicionário e exiba cada chave e valor.
+#----------------------------------------
+
+for chave, valor in produtos.items():
+   print(f"produto: {chave}, preço: R${VALOR}")
+
+
